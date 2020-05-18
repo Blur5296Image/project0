@@ -1,0 +1,90 @@
+@media (min-width: 701px) {
+  h1::before {
+    content: "Popular Games of the ERA";
+  }
+}
+
+@media (max-width: 700px) {
+  h1::before {
+    content: "Popular Games";
+  }
+}
+
+main {
+  display: grid;
+  grid-template-areas: "head head"
+                       "text text"
+                       "see see"
+                       "fig1 fig2"
+                       "fig3 fig4"
+                       "foot foot";
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: white;
+}
+
+h1 {
+  grid-area: head;
+  background-image: url("Background 2~2.jpg");
+  background-size: contain;
+  text-align: center;
+  font-size: 150px;
+  font-family: fantasy;
+  color: white;
+  height: 864px;
+}
+
+.intro {
+  line-height: 1.5;
+  font-size: 35px;
+  grid-area: text;
+}
+
+h3 {
+  font-size: 40px;
+  grid-area: see;
+}
+
+img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+figure {
+  border-radius: 50%;
+  width: 450px;
+  padding: 40px;
+}
+
+figure:hover img {
+    opacity: 0.3;
+  }
+
+#CSGO {
+  justify-self: center;
+  grid-area: fig1;
+}
+
+#VALORANT {
+  grid-area: fig2;
+}
+
+#PUBG {
+  justify-self: center;
+  grid-area: fig3;
+}
+
+#FORTNITE {
+  grid-area: fig4;
+}
