@@ -32,7 +32,7 @@ body {
 
 h1 {
   grid-area: head;
-  background-image: url("Heading.jpg");
+  background-image: url("Heading.jpg")
   background-size: contain;
   text-align: center;
   font-size: 150px;
