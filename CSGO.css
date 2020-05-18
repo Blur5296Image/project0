@@ -1,0 +1,90 @@
+main {
+display: grid;
+grid-template-areas: "head head head"
+                     "tag1 tag1 tag1"
+                     "text text text"
+                     "tab pic pic"
+                     "tag2 tag2 tag2"
+                     "small table table"
+                     "end end end";
+grid-template-columns: 1fr 1fr 1fr;
+justify-content: space-evenly;
+align-items: center;
+align-content: center;
+box-sizing: border-box;
+}
+
+body {
+  font-family: serif;
+  background-image: url("CSGO5.jpg");
+  background-attachment: fixed;
+  color: white;
+  background-size: cover;
+}
+
+.heading {
+  font-family: frontman, fantasy;
+  grid-area: head;
+  font-size: 90px;
+}
+
+.rollintag {
+  font-family: frontman, fantasy;
+  grid-area: tag1;
+  font-size: 45px;
+}
+
+.intro {
+  grid-area: text;
+  font-size: 35px;
+}
+
+.orderedlist {
+  padding-left: 10px;
+  font-size: 35px;
+  grid-area: tab;
+}
+
+.right {
+  width: 1250px;
+  padding: 20px;
+  grid-area: pic;
+}
+
+right:hover {
+  width: 1350px;
+  grid-area: pic;
+}
+
+.rollouttag {
+  font-family: frontman, fantasy;
+  grid-area: tag2;
+  font-size: 45px;
+}
+
+.left {
+  width: 600px;
+  grid-area: small;
+}
+
+left:hover {
+  width: 650px;
+  grid-area: small;
+}
+
+.extra {
+  grid-area: table;
+}
+
+.ending {
+  font-size: 35px;
+  grid-area: end;
+}
+
+button {
+  width: 150px;
+}
+
+button:hover {
+  width: 170px;
+}
